@@ -71,18 +71,12 @@ def main():
 
     # Create the full path for the QR code file
     qr_code_full_path = Path.cwd() / QR_DIRECTORY / qr_filename
-
-    #Create a fixed-name QR code path for README
-    readme_qr_path = Path.cwd() / QR_DIRECTORY / "readme_qr.png"
     
     # Ensure the QR code directory exists
     create_directory(Path.cwd() / QR_DIRECTORY)
     
     # Generate and save the QR code
     generate_qr_code(args.url, qr_code_full_path, FILL_COLOR, BACK_COLOR)
-
-    # Also generate a fixed-name QR code for the README
-    generate_qr_code(args.url, readme_qr_path, FILL_COLOR, BACK_COLOR)
 
 if __name__ == "__main__":
     main()
