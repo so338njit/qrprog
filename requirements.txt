@@ -1,0 +1,4 @@
+python-dotenv==1.1.0
+qrcode==8.0
+validators==0.34.0
+Pillow==10.0.0
